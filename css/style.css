@@ -1,0 +1,345 @@
+@charset 'utf-8';
+
+body{
+    background-color: #fffcb3;
+    line-height: 2;
+    font-size: 16px;
+    
+}
+.wf-mplus1p{ 
+    font-family: "M PLUS 1p"; 
+    margin: 10px 0 0 0;
+
+}
+
+/*背景*/
+.bg-back{
+    position: fixed;
+    background-image: url(../img/back.png);
+    background-size: cover;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+}
+/*ナビ*/
+.lp_pcnav{
+    position: fixed;
+    top: 160px;
+    left: 150px;
+    width: 21.52269%;
+}
+
+/*トップに戻るアヒル*/
+.lp-allitems--pc img{
+    width: 120px;
+}
+.lp-allitems--pc{
+    position: fixed;
+    right: 3.8%;
+    bottom: 25px;
+}
+li{
+    list-style-type: none;
+    color: #979797;
+    font-size: 19px;
+}
+
+.lp_pcnav_list a{
+    color: #918f8f;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.lp_pcnav_list a:hover{
+    color: #333;
+}
+
+.lp_pcnav_list{
+    padding-left: 0;
+}
+
+.lp_main{
+    margin-left: auto;
+    margin-right: 10%;
+    padding: 0;
+    max-width: 45%;
+    border: 11px  solid #ffa025;
+    border-bottom: none;
+    border-radius: 210px 210px 0 0;
+    background-color: #fffdf5;
+}
+#top_bg{
+    background-image: url(../img/main_bg_img.jpg);
+    background-size: 100%;
+
+}
+
+.text_info p{
+    text-align: center;
+}
+/*子供の写真*/
+#main_top_img img{
+    width: 100%;
+    border-radius: 200px 200px 0 0;
+}
+
+.img_enjoy img{
+    width: 70%;
+}
+.img_enjoy{
+    text-align: center;
+    transform:rotate(-10deg);
+    position: relative;
+    bottom: 50px;
+}
+
+/*八幡山ロゴ*/
+.lp_yahata_logo img, footer img{
+    width: 33%;
+    margin: 0 auto;
+
+}
+.lp_yahata_logo{
+    text-align: center;
+}
+/*内容幅*/
+.text_info p,#info,#event,#inquiry,#question{
+    padding: 0 8%;
+}
+
+.info_bg{
+    background-color: #fffcb3;
+    border:#ffa025 solid 2px;
+    border-radius: 20px;
+    margin: 40px auto;
+    width: 220px;
+    padding: 2px 0;
+    text-align: center;
+}
+.info{
+    margin: 0;
+    font-weight: bold;
+}
+
+/*イベント写真*/
+#ivent_img {
+    display: flex;
+    justify-content: space-around;
+}
+
+#ivent_img img{
+    border-radius: 15px;
+}
+
+#event p{
+    margin-top: 0;
+    text-align: center;
+}
+/*写真たち*/
+.bg_nav_img img{
+    width: 90px;
+}
+.bg3 img{ /*タワー*/
+    width: 60px;
+}
+.bg4 img{/*ポニー*/
+    width: 70px;
+}
+
+.bg6 img{/*うさぎ*/
+    width: 55px;
+}
+
+#event{
+    padding: 10px 0 20px;
+    background-image: url(../img/event_bg.jpg);
+    background-size: 100%;
+}
+
+.bg_nav_img{
+    text-align: center;   
+}
+
+img .bg3 ,.bg4, .bg6{
+    width: 60px;
+}
+
+/*お知らせ*/
+.info_text{
+    border-bottom: 1px dashed #25c367;
+}
+.day{
+    display: flex;
+    text-decoration: underline solid 5px #fffcb3;
+    display: inline-block;
+}
+
+/*おといあわせ*/
+#inquiry{
+    text-align: center;
+}
+
+.info_a{
+    margin-top: 20px;
+    border-bottom: 1px solid #25c367;
+    display: inline-block;
+}
+
+.info_a a:hover{
+    color: #25c367;
+
+}
+.naiyou{
+    display: inline-block;
+    margin:  0 40px 40px;
+}
+/*質問*/
+.accordion-area2{
+    list-style-type: none;
+}
+.action_btn2 img{
+width: 20px;
+}
+.action_btn2 {
+    position: relative;
+    cursor: pointer;
+    transition: all .5s ease;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: 'Zen Maru Gothic', sans-serif;
+}
+.accordion-area2 li:first-child {
+    border-top: 1px dashed #25c367;
+}
+.accordion-area2 li {
+    border-bottom: 1px dashed #25c367;
+    padding: 25px 10px;
+}
+.accordion-area2 li .box2 {
+    display: none;
+    color: #81685a;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 20px 0 0 0;
+}
+.accordion-area2{
+    padding: 0;
+}
+.action_btn2:hover::before {
+    transform: scale(1.05);
+}
+.action_btn2.close2::before {
+    content: '';
+    background: url(../img/faq_icon02.png) no-repeat;
+    background-size: cover;
+    width: 22px;
+    height: 22px;
+}
+.action_btn2::before {
+    content: '';
+    background: url(../img/faq_icon01.png) no-repeat;
+    background-size: cover;
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    right: 0;
+    top: 2px;
+    transition: .3s;
+}
+.action_btn2 {
+    position: relative;
+    cursor: pointer;
+    transition: all .5s ease;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: 'Zen Maru Gothic', sans-serif;
+}
+
+/*フッター*/
+footer{
+    text-align: center;
+}
+
+.Copyright{
+    font-size: x-small;
+    margin-bottom: 0;
+    padding-bottom: 3px;
+}
+footer{
+    background-image: url(../img/f.png);
+    background-size: 100%;
+    padding-top: 30px;
+
+}
+.foo_p{
+    margin: 0;
+    font-size: 13px;
+}
+#footer_yahata_logo{
+    margin-bottom: 40px;
+    margin-top: 50px;
+}
+@media screen and (max-width:960px){
+    .lp_pcnav{
+        left: 3%;
+    }
+    #ivent_img {
+        display: block;
+    }
+    #event{
+        text-align: center;
+    }
+
+
+}
+@media screen and (max-width:767px){
+    .lp_pcnav_logo img{
+        display: none;
+        visibility: hidden;
+            
+    }
+    .lp_main{
+        margin: 0;
+        max-width: 100%;
+    }
+     li{
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    }
+    #question li{
+        text-indent: 0;
+
+    }
+    .lp-allitems--pc img{
+        display: none;
+        visibility: hidden;
+
+    }
+    #ivent_img {
+        display: block;
+    }
+    #event{
+        text-align: center;
+    }
+
+    #usagi{
+        margin-top: 50px;
+    }
+    /*写真たち*/
+.bg_nav_img img{
+    width: 80px;
+}
+.bg3 img{ /*タワー*/
+    width: 50px;
+}
+.bg4 img{/*ポニー*/
+    width: 60px;
+}
+
+.bg6 img{/*うさぎ*/
+    width: 45px;
+}
+
+}
